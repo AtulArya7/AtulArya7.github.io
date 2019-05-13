@@ -1,0 +1,32 @@
+.icon-bar {
+  width: 110px;
+  height: 1000px;
+  background-color: #555;
+  overflow: auto;
+
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 25px;
+  color: white;
+  font-size: 19px;
+  text-decoration: none;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .icon-bar a {
+    float: none;
+    display: block;
+  }
+}
+</style>

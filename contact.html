@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  body {
+    margin: 0;
+    background-image: url("images/sea.jpg");
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+
+  width: 40%;
+  padding: 7px;
+  border: 0.002px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-right: 25px;
+  margin-left: 20px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  position:  absolute;
+  top: 70px;
+  left: 40%;
+  right: 15px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 15px;
+}
+
+.icon-bar {
+  width: 133px;
+  height: 1000px;
+  background-color: #555;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+}
+
+.icon-bar a {
+  display: block;
+  text-align: left;
+  transition: all 0.3s ease;
+  padding: 28px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .icon-bar a {
+    float: none;
+    display: block;
+  }
+
+div.fixed{
+  position: fixed;
+  bottom: 100px;
+  left: 800px;
+}
+
+
+</style>
+</head>
+<body>
+
+<center><p><h2><right>Contact Form</h2></p>
+ </center>
+ <div class="icon-bar">
+  <a class="active" href="index.html"><i class="fa fa-home"></i>Home</a>
+  <a href="academics.html"><i class="fa fa-graduation-cap"></i>Academics</a> 
+  <a href="achvmnt.html"><i class="fa fa-envelope">Achievement</i></a> 
+  <a href="intrest.html"><i class="fa fa-heart"></i>Interest</a>
+  <a href="contact.html"><i class="fa fa-address-book"></i>Contacts</a> 
+</div>
+
+
+<div class="container">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+ <p>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  </p>
+  
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="India">India</option>
+    </select>
+
+<p>
+    <label for="subject">Subject</label>
+  </p>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:120px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<div class="fixed">
+
+  <a href="https://www.facebook.com">
+  <img src="images/fb.svg" alt="facebook" width="80" height="80" style="position: absolute; top: 84%; left: 30%"> 
+</a>
+
+  <a href="https://www.instagram.com">
+  <img src="images/insta.jpg" alt="instagram" width="80" height="80" style="position: absolute; top: 84%; left: 45%"> </a>
+
+  <a href="https://www.gmail.com">
+  <img src="images/gmail.jpg" alt="gmail" width="80" height="80" style="position: absolute; top: 84%; left: 75%"> </a>
+
+  <a href="https://www.github.com">
+  <img src="images/github.svg" alt="github" width="80" height="80" style="position: absolute; top: 84%; left: 60%"> </a>
+</div>
+</center>
+
+<div class="icon-bar">
+  <a class="active" href="#"><i class="fa fa-home"></i>Home</a>
+  <a href="academics.html"><i class="fa fa-graduation-cap"></i>Academics</a> 
+  <a href="achvmnt.html"><i class="fa fa-envelope"></i>Achievement</a> 
+  <a href="intrest.html"><i class="fa fa-heart"></i>Interest</a>
+  <a href="contact.html"><i class="fa fa-address-book"></i>Contacts</a> 
+</div>
+</body>
+</html>

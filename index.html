@@ -1,0 +1,84 @@
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body bgcolor="#E6E6FA">
+<style>
+	body {
+		margin: 0;
+		background-image: url("images/cgreen.jpg");
+	}
+.icon-bar {
+  width: 132px;
+  height: 1000px;
+  position: absolute; 
+  left: 0px;
+  top: 0px;
+  background-color: #555;
+
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+  padding: 28px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .icon-bar a {
+    float: none;
+    display: block;
+  }
+}
+ .div{ 
+ 	border-radius: 50%;
+ 	border: 2px solid rgb(243, 187, 85);
+ 	filter: drop-shadow(0 0 20px rgb(243, 187, 85));
+ 	animation-name: anim;
+ 	animation-duration: 4s;
+ }
+
+@keyframes anim {
+	from{border-radius: 50%;}
+	to{border-radius: 90%;}
+
+}
+
+
+</style>
+<body>
+<br>
+<center><img class="div" src="images/cprofile.jpg" width="200" float="left"></center>
+<br>
+<br>
+<h1 style="font-family: Bradely Hand, Cursive; font-size: 45px"><center>About me</center></h1>
+
+<br>
+<br>
+<center><p style="font-family: segoe script; font-size: 20px;">
+	Hello! <br>
+	I am Atul Arya. <br> 
+	I am  an undergraduate in the department of Humanities and Social Science <br> enrolled in 5 year Integrated Msc. Course in IIT Kharagpur.
+</p></center>
+<p>
+<div class="icon-bar">
+  <a class="active" href="index.html"><i class="fa fa-home"></i>Home</a>
+  <a href="academics.html"><i class="fa fa-graduation-cap"></i>Academics</a> 
+  <a href="achvmnt.html"><i class="fa fa-trophy"></i>Achievement</a> 
+  <a href="intrest.html"><i class="fa fa-heart"></i>Interest</a>
+  <a href="contact.html"><i class="fa fa-address-book"></i>Contacts</a> 
+</div>
+  
+</body>
+</html> 
